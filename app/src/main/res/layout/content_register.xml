@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_register"
+    tools:context="net.stitch.myapplication.RegisterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_message_outline_100"
+            android:background="@drawable/textfield"
+            android:id="@+id/emailText"
+            android:ems="10"
+            android:hint="@string/email_hint"
+            android:textColorHint="@color/hintColor"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/pwdText"
+            android:hint="@string/pwd_hint"
+            android:drawableLeft="@drawable/ic_lock_100"
+            android:background="@drawable/textfield"
+            android:textColorHint="@color/hintColor"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignRight="@+id/AccountText"
+            android:layout_alignEnd="@+id/AccountText"
+            android:layout_marginLeft="20dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/nameText"
+                android:hint="@string/name_hint"
+                android:background="@drawable/textfield"
+                android:drawableLeft="@drawable/ic_user_100"
+                android:textColorHint="@color/hintColor"
+                android:layout_below="@+id/editText4"
+                android:layout_alignLeft="@+id/editText4"
+                android:layout_alignStart="@+id/editText4"
+                android:layout_marginTop="30dp"
+                android:width="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.80"
+                android:layout_marginRight="10dp" />
+
+            <RelativeLayout
+                android:layout_width="87dp"
+                android:layout_height="83dp"
+                android:layout_marginLeft="0dp">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/imageView2"
+                    app:siBorderWidth="3dp"
+                    app:siBorderColor="@color/btnBgColor"
+                    android:src="@drawable/ic_babys_room_50"
+                    android:layout_alignBottom="@+id/imageButton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imageButton"
+                    android:src="@drawable/ic_camera_50"
+                    android:layout_weight="0.07"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/imageView2"
+                    android:layout_alignEnd="@+id/imageView2"
+                    android:onClick="img_onClick"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="315dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/register_btn"
+                android:id="@+id/button"
+                android:layout_marginTop="23dp"
+                android:layout_below="@+id/button2"
+                android:layout_alignLeft="@+id/button2"
+                android:layout_alignStart="@+id/button2"
+                android:layout_alignRight="@+id/button2"
+                android:layout_alignEnd="@+id/button2"
+                android:background="@color/btnBgColor"
+                android:layout_marginRight="70dp"
+                android:onClick="register_onclick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/clear_btn"
+                android:id="@+id/clearBtn"
+                android:layout_marginTop="23dp"
+                android:layout_below="@+id/button2"
+                android:layout_alignLeft="@+id/button2"
+                android:layout_alignStart="@+id/button2"
+                android:layout_alignRight="@+id/button2"
+                android:layout_alignEnd="@+id/button2"
+                android:background="@color/btnBgColor"
+                android:onClick="clear_onClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

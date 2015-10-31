@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="email_hint">電子郵件</string>
+    <string name="pwd_hint">密碼</string>
+    <string name="login_btn">登入</string>
+    <string name="fb_login_btn">以Facebook帳號登入</string>
+    <string name="register_btn">註冊</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="name_hint">暱稱</string>
+    <string name="title_activity_imgdialog">imgdialog</string>
+    <string name="img_text1">相簿</string>
+    <string name="img_text2">相機</string>
+    <string name="base_uri">http://10.1.153.6:8080</string>
+    <string name="clear_btn">清空</string>
+    <string name="title_activity_google_map">GoogleMapActivity</string>
+    <string name="androidKey">AIzaSyAB6GhGioxaKSWTHWxgNTjXzSztdXuABCE</string>
+</resources>
